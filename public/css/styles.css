@@ -149,7 +149,7 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-around; /*ou space-between */
+  justify-content: space-between; /*ou space-between */
   margin: 0 auto;
   position: relative;
   margin-bottom: 400px;
@@ -164,6 +164,7 @@ body {
 .menu-items, ul {
   display: flex;
   text-shadow: #584653 2px 2px 0px;
+  width: fit-content;
 }
 
 ul, a {
