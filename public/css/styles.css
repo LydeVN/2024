@@ -1,41 +1,39 @@
 /* https://uiverse.io/andrew-demchenk0/tasty-yak-79 */
 /* icons : https://lordicon.com/icons/system/regular */
-/* behance or dribbble insptiration de portfolio */
+/* behance or dribbble inspiration de portfolio */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); 
 @import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+
 /* * {
   border: 1px solid red
 } */
 
-.me {
-    font-size: 3em;
-    font-family: Bebas;
-    /* text-align: center; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(213, 202, 202);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment*/
-    background-attachment: fixed;
-    padding: 50px;
-    
+  background-color: rgb(213, 202, 202);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
 }
 
-
-
-/*background:linear-gradient(rgb(22, 22, 22), rgb(65, 64, 64), rgb(170, 170, 170));*/
+.me {
+  font-size: 3em;
+  font-family: Bebas;
+}
 
 .backtop {
-    text-align: center;
+  text-align: center;
 }
-
-
 
 .moi {
   display: flex;
@@ -43,7 +41,6 @@ body {
   align-items: center;
   margin-bottom: 150px;
   position: relative;
-  
 }
 
 .devlogo {
@@ -55,72 +52,36 @@ body {
   margin-left: 80%;
 }
 
-
-
 .name {
   color: white;
   flex: 1;
   text-align: left;
-  /* margin-right: -7%; */
   font-size: 5em;
   font-family: Bebas; 
-  text-shadow:#929292  6px 10px 10px;
+  text-shadow: #929292 6px 10px 10px;
   position: relative;
   animation: name-flotage 4s infinite;
-  
 }
 
 @keyframes name-flotage {
-  0% {
-    top: 0px;
-  }
-  50% {
-    top: -15px;
-  } 
-  100% {
-    top: 0px;
-  }
+  0% { top: 0px; }
+  50% { top: -15px; } 
+  100% { top: 0px; }
 }
 
-
 @keyframes flotage {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: -30px;
-  }
-  100% {
-    top: 0;
-  }
+  0% { top: 0; }
+  50% { top: -30px; }
+  100% { top: 0; }
 }
 
 @keyframes flotage2 {
-  0% {
-    left: 0;
-  }
-  50% {
-    left: -15px;
-  }
-  100% {
-    left: 0;
-  }
+  0% { left: 0; }
+  50% { left: -15px; }
+  100% { left: 0; }
 }
 
-
-
-
-
-/*:hover = quand le curseur est dessus :active = au moment du clique :focus = après avoir cliqué*/
-/* .pres:hover {
-  font-size: 2em;
-  margin-left: 31%;
-  margin-right: 29%;
-  
-} */
-
-.whoami 
-{
+.whoami {
   padding: 10px;
   font-family: Sofadi One;
   font-size: 50px;
@@ -128,30 +89,16 @@ body {
   text-align: center;
 }
 
-@keyframes move {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -10px;
-  }
-}
-
 .menu-items {
-  /* position: fixed;
-  width: 100%;
-  background-color: black;
-  z-index: 1000; */
   font-family: Oxanium;
   color: white;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-between; /*ou space-between */
+  justify-content: space-between; 
   margin: 0 auto;
   position: relative;
   margin-bottom: 400px;
-   
 }
 
 .menu-items, li {
@@ -166,11 +113,11 @@ body {
 }
 
 ul, a {
-  color: white;
-} 
+  color: white; 
+}
 
 .main-pages {
-  color:purple !important ;
+  color: purple !important;
 }
 
 .active {
@@ -179,20 +126,13 @@ ul, a {
   position: relative;
   display: block;
   text-align: center;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  color:rgb(255, 255, 255) !important;
+  padding: 4px 10px;
+  color: rgb(255, 255, 255) !important;
   align-content: center;
   margin-right: 10%;
 }
 
-.main-pages, ul, .moov:hover {
-  animation: both 1s hover;
-}
-
-.main-pages, ul, .active:hover {
+.main-pages, ul, .moov:hover, .active:hover {
   animation: both 1s hover;
 }
 
@@ -201,72 +141,47 @@ ul, a {
 }
 
 .sub-menu {
-  display: none; /* Masquer le sous-menu par défaut */
-  position: absolute; /* Positionner le sous-menu par rapport à l'élément parent */
-  background-color: black; /* Couleur de fond du sous-menu */
-  border-radius: 5px; /* Coins arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour le sous-menu */
-  z-index: 1000; /* S'assurer que le sous-menu est au-dessus des autres éléments */
+  display: none; 
+  position: absolute; 
+  background-color: black; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  z-index: 1000; 
 }
 
-
 .nav-item:hover .sub-menu {
-  display: block; /* Afficher le sous-menu au survol de l'élément parent */
+  display: block; 
 }
 
 .sub-menu li {
-  padding: 10px; /* Espacement pour les sous-items */
+  padding: 10px; 
 }
 
 .sub-menu li a {
-  color: white; /* Couleur du texte des sous-items */
-  text-decoration: none; /* Supprimer le soulignement */
+  color: white; 
+  text-decoration: none; 
 }
 
 .sub-menu li a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond au survol du sous-item */
+  background-color: rgba(255, 255, 255, 0.2); 
 }
 
 .moov {
   position: relative;
   display: block;
   text-align: center;
-  color:rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) !important;
   align-content: center;
 }
 
-.moov:hover {
-  opacity: 0.6;
-}
-
-.active:hover {
+.moov:hover, .active:hover {
   opacity: 0.6;
 }
 
 @keyframes hover {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -10px
+  0% { top: 0px; }
+  100% { top: -10px; }
 }
-}
-
-
-
-
-/*nouveau test */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-/* From Uiverse.io by andrew-demchenk0 */ 
 
 a {
   text-decoration: none;
@@ -291,11 +206,7 @@ button {
   max-width: 100%;
   min-width: 140px;
   padding: 3px;
-  text-decoration: none;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -323,15 +234,12 @@ button:active {
 }
 
 footer {
-text-align: center;
-padding: 10px;
-color: white;
-width: 100%;
-bottom: 0;
-text-decoration: bold;
-}
-
-footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  text-decoration: bold;
   margin-top: 200px;
 }
 
@@ -339,30 +247,20 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .moi {
-    flex-direction: column; /* switch to column layout */
+    flex-direction: column; 
   }
   
   .name {
-    order: 1; /* move .name to the top */
+    order: 1; 
     text-align: center;
     margin-left: 0;
-    
   }
   
-  
-
   @keyframes top {
-    0% {
-      left: 0px;
-    }
-    50% {
-      left: -10px;
-    }
-    100% {
-      left: 0px;
-    }
+    0% { left: 0px; }
+    50% { left: -10px; }
+    100% { left: 0px; }
   }
-
 }
 
 .imgtest:hover {
@@ -371,7 +269,6 @@ footer {
 
 img[title] {
   width: 200px;
-}
+} 
 
 /*test du theme*/
-
