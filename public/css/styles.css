@@ -66,11 +66,11 @@ body {
   font-family: Bebas; 
   text-shadow:#929292  6px 10px 10px;
   position: relative;
-  animation: top 4s infinite;
+  animation: name-flotage 4s infinite;
   
 }
 
-@keyframes top {
+@keyframes name-flotage {
   0% {
     top: 0px;
   }
