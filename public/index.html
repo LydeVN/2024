@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Accueil - Vannelli Jules</title>
-      <link href ="css/styles.css" rel ="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/vnd.icon" href="img/favicon.ico">
-      
-      
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Vannelli Jules</title>
+    <link href ="css/styles.css" rel ="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.icon" href="img/favicon.ico">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body id="top">
@@ -39,22 +39,22 @@
         
       </nav> -->
       
-      <nav>
-        <div class="menu-items">
+      <nav class="menu-items">
+        <div>
           <ul>
-            <li class="active"><a href="index.html" target="_blank"><b>Home</b></a></li>
-            <li class="moov"><a href="html/Profil.html" target="_blank"><b>Profil</b></a></li>
+            <li class="active"><a href="index.html" target="_blank">Home</a></li>
+            <li class="moov"><a href="html/Profil.html" target="_blank">Profil</a></li>
             <li class="nav-item">
-                <a href="html/BTS_sio.html" class="main-page" target="_blank"><b>BTS SIO</b></a>
+                <a href="html/BTS_sio.html" class="main-page" target="_blank">BTS SIO</a>
                 <ul class="sub-menu">
-                    <li><a href="html/slam.html"><b>SLAM</b></a></li>
-                    <li><a href="html/sisr.html"><b>SISR</b></a></li>
+                    <li><a href="html/slam.html">SLAM</a></li>
+                    <li><a href="html/sisr.html">SISR</a></li>
                 </ul>
             </li>
-            <li class="moov"><a href="html/Competences.htm" target="_blank"><b>Compétences</b></a></li>
-            <li class="moov"><a href="html/Experiences.htm" target="_blank"><b>Experiences</b></a></li>
-            <li class="moov"><a href="html/projects.htm" target="_blank"><b>Projets</b></a></li>
-            <li class="moov"><a href="html/contact.htm" class="main-pages" target="_blank"><b>Contact</b></a></li>
+            <li class="moov"><a href="html/Competences.htm" target="_blank">Compétences</a></li>
+            <li class="moov"><a href="html/Experiences.htm" target="_blank">Experiences</a></li>
+            <li class="moov"><a href="html/projects.htm" target="_blank">Projets</a></li>
+            <li class="moov"><a href="html/contact.htm" class="main-pages" target="_blank">Contact</a></li>
           </ul> 
         </div>
     </nav>
@@ -82,13 +82,14 @@
           
           
       <div class="mainbot">
-        <center>
-          <a href="DL/CVJules.zi" download="CVJules.zip">
-            <button>
-              <div class="text">Télécharger mon CV</div>
-            </button>
-          </a>
-        </center>
+        
+            <a href="DL/CVJules.zi" download="CVJules.zip">
+              <button class="pushable" data-aos="fade-up">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front">Mon CV</span>
+              </button>            
+            </a>
       </div>      
       <!-- <script src="js/burger_resp.js"></script> -->
     </main>
@@ -97,6 +98,6 @@
       <p>© 2024 Jules Vannelli. Tous droits réservés.</p>
     </footer>
 
-
+    <script>AOS.init();</script>
   </body>
 </html>
