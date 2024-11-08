@@ -62,7 +62,7 @@ body {
   text-shadow: #929292 6px 10px 10px;
   position: relative;
   animation: name-flotage 4s infinite;
-  margin-bottom: 500px;
+  margin-bottom: 100px;
 }
 
 @keyframes name-flotage {
@@ -99,7 +99,7 @@ body {
   justify-content: space-between; 
   margin: 0 auto;
   position: relative;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
 }
 
 .menu-items, li {
