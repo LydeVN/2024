@@ -339,7 +339,7 @@ footer {
   font-family: Poppins;
   margin-top: 150px;
   width: 100%;
-  /* padding: 100px 15%; */
+  padding: 100px 15%;
   padding-bottom: 10px !important;
   background-color: rgb(78, 76, 76);
   color: #efefef;
@@ -347,19 +347,30 @@ footer {
 
 .footer {
   display: flex;
+  flex-wrap: wrap; /* Pour permettre à chaque colonne de se placer proprement dans le footer */
+  justify-content: space-between; /* Alignement des éléments sur l'axe X */
+  align-items: flex-start; /* Alignement des éléments sur l'axe Y */
+  gap: 2rem; /* Si tu veux un espace entre les colonnes */
 }
 
 .footer div {
-  justify-content: center;
-  gap: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Si tu veux bien espacer les éléments à l'intérieur des colonnes */
+  align-items: flex-start; /* Alignement des éléments à l'intérieur des divs */
 }
 
-h3 {
+footer, .col-1, h2 {
   text-decoration: overline;
 }
 
+
 .col-2 {
   flex-grow: 2;
+}
+
+.col-1, a {
+  align-self: center;
 }
 
 .limited {
