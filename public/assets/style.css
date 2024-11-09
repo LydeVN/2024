@@ -334,7 +334,7 @@ img[title] {
   width: 200px;
 } 
 
-/* todo */
+/* todo alignement*/
 footer {
   font-family: Poppins;
   margin-top: 150px;
@@ -360,21 +360,25 @@ footer {
   align-items: flex-start; /* Alignement des éléments à l'intérieur des divs */
 }
 
-footer, .col-1, h2 {
+.col-1, .col-2 {
+  flex: 1 1 30%; /* Les colonnes vont occuper 30% de la largeur chacune, et elles vont se redimensionner en fonction de l'espace disponible */
+}
+
+h3 {
   text-decoration: overline;
-}
-
-
-.col-2 {
-  flex-grow: 2;
-}
-
-.col-1, a {
-  align-self: center;
+  margin-bottom: 10px; /* Pour un meilleur espacement */
 }
 
 .limited {
   padding-top: 50px;
+  text-align: center;
+  width: 100%; /* Assure que le texte soit centré sous les autres éléments */
+}
+
+input[type="text"] {
+  width: 100%; /* Donne de la largeur aux champs d'entrée dans la newsletter */
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
 /* Background-image : conic-gradient() */
