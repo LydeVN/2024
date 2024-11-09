@@ -339,7 +339,7 @@ footer {
   font-family: Poppins;
   margin-top: 150px;
   width: 100%;
-  padding: 100px 15%;
+  /* padding: 100px 15%; */
   padding-bottom: 10px !important;
   background-color: rgb(78, 76, 76);
   color: #efefef;
@@ -351,6 +351,7 @@ footer {
 
 .footer div {
   justify-content: center;
+  gap: 10%;
 }
 
 h3 {
@@ -364,3 +365,5 @@ h3 {
 .limited {
   padding-top: 50px;
 }
+
+/* Background-image : conic-gradient() */
