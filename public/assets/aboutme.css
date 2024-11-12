@@ -118,6 +118,8 @@ a:visited {
 }
 
 .textPres1 {
+  margin: 0 auto;
+  position: relative;
   font-size: 1.3em;
   font-family: Edu AU VIC WA NT Pre, cursive;
   font-weight: bold;
@@ -127,6 +129,44 @@ a:visited {
   width: 300px;
   padding: 15px;
 }
+
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.textPres1::after, .card::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 50%, blue);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 5px;
+  border-radius: 5px;
+  animation: 3s spin linear infinite;
+
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.test-container::before {
+  filter: blur(1.5em);
+  opacity: 0.6;
+}
+
 .textPres2 {
   font-size: 1.3em;
   font-family: Edu AU VIC WA NT Pre, cursive;
