@@ -120,14 +120,93 @@ a:visited {
   font-size: 1.3em;
   font-family: Kanit;
   background-color: rgb(74, 70, 70);
-  width: 300px;
-  padding: 15px;
   border-radius: 10px;
   text-align: justify;
+  width: 300px;
+  padding: 15px;
 }
 
 .photo img {
   height: 180px;
   border-radius: 120px;
   opacity: 0.7;
+}
+
+.textPres span {
+  color: rgb(145, 187, 190);
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+
+
+/* footer */
+footer {
+  background-color: grey;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  text-decoration: bold;
+  margin-top: 200px;
+}
+
+/* Centrer le contenu du footer et ajuster l'espacement des colonnes */
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Pour permettre aux colonnes de s'ajuster */
+  justify-content: center; /* Centrer horizontalement les colonnes */
+  align-items: flex; /* Aligner les éléments en haut */
+  gap: 10%; /* Espace entre les colonnes */
+  font-family: Kanit;
+}
+
+/* Ajuster les colonnes pour les centrer et les espacer correctement */
+
+
+.col-1, .col-2, .col-3 {
+  flex: 1 1 1 30%; /* Les colonnes vont occuper 30% de la largeur, mais vont s'ajuster selon l'espace disponible */
+  max-width: 30%; /* Limiter la largeur des colonnes pour éviter qu'elles prennent toute la place */
+}
+
+/* Centrer le texte et autres éléments dans la colonne newsletter */
+.limited {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 100%; /* Donne de la largeur aux champs d'entrée dans la newsletter */
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+
+/* Contacts logos */
+.myContacts {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  align-items: center;
+}
+
+.myContacts img {
+  width: 40px;
+}
+
+h2 {
+  text-decoration: underline;
+  padding: 20px;
+}
+
+.subButton {
+  font-family: Edu AU VIC WA NT Pre, cursive;
+  padding-inline-start: 5px;
+  padding-inline-end: 5px;
+  background-color: #5a5959c5;
+  font-weight: bold;
+  font-size: 17px
 }
