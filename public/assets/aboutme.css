@@ -111,12 +111,13 @@ a:visited {
 
 .myPresentation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20%;
   align-items: center;
 }
 
-.textPres {
+.textPres1 {
   font-size: 1.3em;
   font-family: Kanit;
   background-color: rgb(74, 70, 70);
@@ -125,11 +126,31 @@ a:visited {
   width: 300px;
   padding: 15px;
 }
+.textPres2 {
+  font-size: 1.3em;
+  font-family: Kanit;
+  background-color: rgb(74, 70, 70);
+  border-radius: 10px;
+  text-align: justify;
+  width: 340px;
+  padding: 15px;
+}
+.textPres3 {
+  margin-top: 100px;
+  font-size: 1.3em;
+  font-family: Kanit;
+  background-color: rgb(74, 70, 70);
+  border-radius: 10px;
+  text-align: justify;
+  width: 340px;
+  padding: 15px;
+}
 
 .photo img {
   height: 180px;
   border-radius: 120px;
   opacity: 0.7;
+  box-shadow: 3px 3px 3px rgb(31, 31, 31);
 }
 
 .textPres span {
