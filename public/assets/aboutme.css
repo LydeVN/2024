@@ -124,7 +124,6 @@ a:visited {
 }
 
 .textPres1 {
-  position: relative; /* Nécessaire pour le positionnement absolu de ::after */
   font-size: 1.3em;
   font-family: 'Edu AU VIC WA NT Pre', cursive;
   font-weight: bold;
@@ -135,19 +134,6 @@ a:visited {
   padding: 15px;
   z-index: 1; /* Assure que le texte reste au-dessus */
 }
-
-/* .textPres1::after {
-  content: ""; 
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  background-image: linear-gradient(to right, blue, purple);
-  border-radius: 15px; 
-  z-index: -1; 
-} */
-  
 
 
 .textPres2 {
