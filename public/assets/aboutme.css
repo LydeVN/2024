@@ -109,6 +109,47 @@ a:visited {
   color: inherit;
 }
 
+.whoAmI {
+  font-family: Kanit;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(52, 51, 51);
+  text-shadow: 2px 1px 2px black;
+  transition: font-size 1s;
+}
+
+.whoAmI:hover {
+  animation: forwards 1s growFont;
+  position: relative;
+}
+
+.animated-text:not(:hover) {
+  animation: shrinkFont 1s forwards;
+}
+
+
+@keyframes growFont {
+  from {
+    font-size: 2em;
+  }
+  to {
+    font-size: 2.3em;
+  }
+}
+
+@keyframes decFont {
+  from{
+    font-size: 2.3em;
+  }
+  to {
+    font-size: 2em;
+  }
+
+}
+
+
 .myPresentation {
   display: flex;
   flex-wrap: wrap;
