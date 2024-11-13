@@ -148,60 +148,38 @@ a:visited {
 .myPresentation {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   justify-content: center;
   gap: 20%;
   align-items: center;
 }
 
 .textPres1 {
-  margin: 0 auto;
-  position: relative;
+  position: relative; /* Nécessaire pour le positionnement absolu de ::after */
   font-size: 1.3em;
-  font-family: Edu AU VIC WA NT Pre, cursive;
+  font-family: 'Edu AU VIC WA NT Pre', cursive;
   font-weight: bold;
-  background-color: rgb(74, 70, 70);
+  background: rgb(74, 70, 70);
   border-radius: 10px;
   text-align: justify;
   width: 300px;
   padding: 15px;
+  z-index: 1; /* Assure que le texte reste au-dessus */
 }
 
-
-@property --angle{
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.textPres1::after, .card::before {
-  content: '';
+.textPres1::after {
+  content: ""; /* Nécessaire pour afficher le pseudo-élément */
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), transparent 50%, blue);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 5px;
-  border-radius: 5px;
-  animation: 3s spin linear infinite;
-
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: linear-gradient(to right, blue, purple);
+  border-radius: 15px; /* Ajuste pour suivre la forme de la bordure */
+  z-index: -1; /* Assure que ::after reste derrière .textPres1 */
 }
+  
 
-@keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
-
-.test-container::before {
-  filter: blur(1.5em);
-  opacity: 0.6;
-}
 
 .textPres2 {
   font-size: 1.3em;
