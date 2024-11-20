@@ -151,4 +151,25 @@ a img:hover{
   text-shadow: 0 0 10px 13px rgb(192, 189, 189);
 }
 
+#next-page-button {
+  font-family: Poppins;
+  position: fixed;
+  bottom: 20px; /* Distance du bas de l'écran */
+  right: 20px; /* Distance du côté droit */
+  padding: 5px 20px;
+  background-color: #2f2f30; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: background-color 0.4s ease;
+  border: solid 2px orange;
+}
+
+#next-page-button:hover {
+  background-color: #4b4a4a; /* Couleur au survol */
+}
+
 
