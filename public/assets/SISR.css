@@ -99,23 +99,27 @@ a:visited {
   color: inherit;
 }
 
-#next-page-button {
+.sio-container{
+  display: flex;
+  color: white;
   font-family: Poppins;
-  position: fixed;
-  bottom: 20px; /* Distance du bas de l'écran */
-  right: 20px; /* Distance du côté droit */
-  padding: 5px 20px;
-  background-color: #2f2f30; /* Couleur de fond */
-  color: white; /* Couleur du texte */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  transition: background-color 0.4s ease;
-  border: solid 2px orange;
+  font-size: 1.4rem;
+  gap: 7%;
+  justify-content: center;
+  align-items:end ;
+  font-weight: bold;
 }
 
-#next-page-button:hover {
-  background-color: #4b4a4a; /* Couleur au survol */
+.sio-container div{
+  width: 250px;
+  background-color: bisque;
+  border-radius: 30px 30px 10px 10px;
+  padding: 1%;
 }
+
+/* stairs */
+
+.sio-container div:nth-child(4){
+  padding-right: 4;
+}
+

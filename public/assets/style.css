@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Pre&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
 
 /* * {
   border: 1px solid red
@@ -21,7 +22,7 @@
 }
 
 body {
-  background-color: rgba(53, 53, 52, 0.795);
+  background-color: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,6 +32,7 @@ body {
 main {
   padding: 50px;
 }
+
 header {
   padding: 50px;
 }
@@ -40,10 +42,9 @@ header {
 .menu-items {
   display: flex;
   justify-content: center;
-  gap: 5%;
-  font-family: Oxanium;
-  font-weight: bold;
-  text-shadow: 2px 2px 0px grey;
+  gap: 2.8%;
+  font-family: Poppins;
+  /* font-weight: bold; */
   margin-bottom: 200px;
 }
 
@@ -52,13 +53,14 @@ header {
   position: relative;
   color: rgb(255, 255, 255) !important;
   align-content: center;
-  padding: 10px 15px; /* Ajuste le padding selon tes besoins */
+  /* padding: 10px 15px; Ajuste le padding selon tes besoins */
   transform-origin: center;
 }
 
 .moov:hover, .active:hover {
   transform: scale(0.9); /* Réduit l'élément légèrement au survol */
   opacity: 0.8; /* Réduit aussi un peu l’opacité pour accentuer l'effet */
+  text-decoration: underline orange 3px;
 }
 
 .main-pages {
@@ -69,7 +71,7 @@ header {
   background-color: rgb(82, 1, 66);
   border-radius: 6px;
   position: relative;
-  padding: 4px 10px;
+  padding: 1px 10px;
   color: rgb(255, 255, 255) !important;
 }
 
@@ -88,9 +90,6 @@ header {
   display: flex;
 }
 
-.moov:hover, .active:hover {
-  opacity: 0.6;
-}
 
 .me {
   font-size: 3em;
@@ -101,13 +100,7 @@ header {
   text-align: center;
 }
 
-.moi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  position: relative;
-}
+
 
 .devlogo {
   animation: flotage2 3s infinite;
@@ -119,33 +112,21 @@ header {
 }
 
 .name {
+  text-align: center;
   color: white;
   flex: 1;
-  text-align: left;
   font-size: 5em;
   font-family: Bebas; 
   text-shadow: #929292 6px 10px 10px;
   position: relative;
-  animation: name-flotage 4s infinite;
-  margin-bottom: 0px;
+  /* animation: name-flotage 4s infinite; */
+  transition: transform 0.3s ease;
+  margin-bottom: 100px;
+  -webkit-text-stroke: 2px black;
 }
 
-@keyframes name-flotage {
-  0% { top: 0px; }
-  50% { top: -15px; } 
-  100% { top: 0px; }
-}
-
-@keyframes flotage {
-  0% { top: 0; }
-  50% { top: -30px; }
-  100% { top: 0; }
-}
-
-@keyframes flotage2 {
-  0% { left: 0; }
-  50% { left: -15px; }
-  100% { left: 0; }
+.name:hover {
+  transform: scale(0.9);
 }
 
 .whoami {
@@ -168,6 +149,7 @@ a:visited {
 .mainbot {
   display: flex;
   justify-content: center;
+  align-items: center;
   
 }
 
@@ -189,11 +171,10 @@ a:visited {
   left: 0;
   height: 100%;
   width: 100%;
-  background: hsl(46, 12%, 42%);
   border-radius: 8px;
   filter: blur(2px);
   will-change: transform;
-  transform: translateY(2px);
+  transform: translateY(5px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 
@@ -214,16 +195,17 @@ a:visited {
 }
 
 .front {
+  font-family: Oswald;
   display: block;
   position: relative;
   border-radius: 8px;
   background: hsl(318, 69%, 28%);
-  padding: 16px 32px;
+  padding: 10px 32px;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
@@ -260,9 +242,6 @@ a:visited {
 /* todo */
 
 @media only screen and (max-width: 600px) {
-  .moi {
-    flex-direction: column; 
-  }
   
   .name {
     order: 1; 
@@ -287,7 +266,7 @@ img[title] {
 
 /* todo alignement*/
 footer {
-  background-color: grey;
+  background-color: rgb(24, 23, 23);
   text-align: center;
   padding: 30px;
   color: white;
@@ -357,5 +336,60 @@ h2 {
 }
 
 
+/* logos reseaux sociaux */
 
-/* Background-image : conic-gradient() */
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 0.2rem solid rgb(77, 13, 71);
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1rem 3rem;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.social-icons a:hover{
+  color: rgb(211, 211, 211);
+  transform: scale(1.1) translateY(-5px);
+  background-color: rgb(128, 119, 74);
+  box-shadow: 0 10px 10px rgb(85, 21, 74);
+}
+
+.mid-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#next-page-button {
+  font-family: Poppins;
+  position: fixed;
+  bottom: 20px; /* Distance du bas de l'écran */
+  right: 20px; /* Distance du côté droit */
+  padding: 5px 20px;
+  background-color: #2f2f30; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: background-color 0.4s ease;
+  border: solid 2px orange;
+}
+
+#next-page-button:hover {
+  background-color: #4b4a4a; /* Couleur au survol */
+}
