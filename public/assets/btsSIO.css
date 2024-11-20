@@ -147,4 +147,8 @@ a img:hover{
   box-shadow: 0 0 10px 13px rgb(192, 189, 189);
 }
 
+.slam-container div:hover{
+  text-shadow: 0 0 10px 13px rgb(192, 189, 189);
+}
+
 
