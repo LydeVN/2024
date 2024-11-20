@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BTS SIO - Vannelli Jules</title>
     <link rel="stylesheet" href="../assets/btsSIO.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -25,11 +27,11 @@
     <main>
         <div>
             <div class="SIO-container">
-                <div class="slam-container">
+                <div class="slam-container" data-aos="fade-down-right">
                     <div class="SISR"><a href="SIO/SISR.html" target="_blank">SISR</a></div>
                     <a href="SIO/SISR.html" target="_blank"><img src="../img/SISR.webp" alt="réseau et serveur"></a>
                 </div>
-                <div class="sisr-container">
+                <div class="sisr-container" data-aos="fade-down-left">
                     <div class="SLAM"><a href="SIO/SLAM.html" target="_blank">SLAM</a></div>
                     <a href="SIO/SLAM.html" target="_blank"><img src="../img/SLAM.jpg"
                             alt="Développement informatique"></a>
@@ -42,6 +44,9 @@
         </div>
         <a href="competences.html"><button id="next-page-button">Page suivante</button></a>
     </main>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 

@@ -125,12 +125,6 @@ header {
   -webkit-text-stroke: 2px black;
 }
 
-/* @keyframes name-flotage {
-  0% { top: 0px; }
-  50% { top: -15px; } 
-  100% { top: 0px; }
-} */
-
 .name:hover {
   transform: scale(0.9);
 }
