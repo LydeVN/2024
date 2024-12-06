@@ -112,23 +112,56 @@ header {
   margin-left: 80%;
 }
 
-.name {
+.nameCenter{
+  display: flex;
   text-align: center;
-  color: white;
-  flex: 1;
-  font-size: 3.5em;
-  font-family: "Rubik Mono One", monospace; 
-  text-shadow: #929292 6px 10px 10px;
-  position: relative;
-  /* animation: name-flotage 4s infinite; */
-  transition: transform 0.3s ease;
-  margin-bottom: 100px;
-  -webkit-text-stroke: 2px black;
+  justify-content: center;
 }
 
-.name:hover {
-  transform: scale(0.9);
+.name {
+  text-align: center;
+  color: rgb(4, 4, 4);
+  font-size: 5em;
+  font-family: Poppins;
+  -webkit-text-stroke: 2px #860779;
+  position: relative;
+  overflow: hidden; /* Cache les parties hors du conteneur */
+  display: inline-block;
 }
+
+.name::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Place le trait en dessous du texte */
+  left: 0;
+  width: 0; /* Initialement, la largeur du trait est 0 */
+  height: 4px; /* Épaisseur du trait */
+  background-color: orange; /* Couleur du trait */
+  animation: line-reveal 1s ease-out forwards; /* Animation de la ligne */
+}
+
+.name span {
+  display: inline-block;
+  transform: translateX(-100%); /* Texte hors du conteneur à gauche */
+  animation: text-reveal 1s ease-out forwards; /* Animation du texte */
+  animation-delay: 0.5s; /* Délai après le trait */
+}
+
+/* Animation pour le trait */
+@keyframes line-reveal {
+  to {
+    width: 100%; /* Étend le trait jusqu'à couvrir toute la largeur */
+  }
+}
+
+/* Animation pour le texte */
+@keyframes text-reveal {
+  to {
+    transform: translateX(0); /* Déplace le texte à sa position initiale */
+  }
+}
+
+
 
 .whoami {
   padding: 10px;
@@ -363,7 +396,7 @@ h2 {
 .social-icons a:hover{
   color: rgb(211, 211, 211);
   transform: scale(1.1) translateY(-5px);
-  background-color: rgb(128, 119, 74);
+  background-color: rgb(170, 162, 74);
   box-shadow: 0 10px 10px rgb(85, 21, 74);
 }
 

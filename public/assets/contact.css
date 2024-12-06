@@ -27,6 +27,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  color: white;
 }
 
 main {
@@ -45,7 +46,7 @@ header {
   gap: 2.8%;
   font-family: Poppins;
   /* font-weight: bold; */
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .moov, .active {
@@ -118,4 +119,33 @@ a:visited {
 
 #next-page-button:hover {
   background-color: #a06718; /* Couleur au survol */
+}
+
+.formulaire form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+form label{
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 200;
+  text-shadow: 3px 2px 2px red;
+}
+
+form input{
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+
+
+input
+{
+    margin-left: 50%;
+    transform: translateX(-50%); /* Pour éviter que le champs soit trop décalé */
+    padding: 10px 10px;
+    
 }
