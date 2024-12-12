@@ -149,3 +149,9 @@ input
     padding: 10px 10px;
     
 }
+
+#message{
+
+  max-width: 500px;
+  align-items: center;
+}

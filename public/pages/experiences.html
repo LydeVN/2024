@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <title>Mes experiences</title>
   <link rel="stylesheet" href="../assets/experiences.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -22,8 +24,68 @@
     </nav>
   </header>
   <main>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+    </style>
+    <!--This is the main container that contains the whole timeline.-->
+    <section class="design-section">
+      <div class="timeline">
+
+        <!--Well, The reason for this div is to fill space. 
+This space is technically used for keeping dates, 
+but I didn't find the need for dates. However, I'll provide 
+you the styling for dates, so that you can use it if you 
+wanted to.-->
+        <div class="timeline-empty">
+        </div>
+
+        <!--This is the class where the timeline graphics are 
+housed in. Note that we have timeline-circle 
+here for that pointer in timeline.-->
+
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+        <div data-aos="fade-up" class="timeline-component timeline-content">
+          <h3>2021/2022</h3>
+          <p>Baccalauréat </br><b>spécialités</b> : Histoire géographie, Géopolitique et Sciences politiques et Sciences
+            économiques et sociales</p>
+        </div>
+        <div data-aos="fade-right" class="timeline-component timeline-content">
+          <h3>2022/2023</h3>
+          <p>Licence 1 | droit</p>
+        </div>
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+        <div class="timeline-empty">
+        </div>
+
+        <div class="timeline-empty">
+        </div>
+
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+        <div data-aos="fade-right" class=" timeline-component timeline-content">
+          <h3>Licence 1 | art du spectacle</h3>
+          <p>Orienté audiovisuel</p>
+        </div>
+        <div data-aos="fade-left" class=" timeline-component timeline-content">
+          <h3>Javascript</h3>
+          <p>Some Text.</p>
+        </div>
+        
+
+      </div>
+      </div>
+    </section>
     <a href="projects.html"><button id="next-page-button">Page suivante</button></a>
   </main>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
