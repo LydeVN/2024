@@ -50,7 +50,7 @@ header {
   gap: 2.8%;
   font-family: Poppins;
   /* font-weight: bold; */
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .moov, .active {
@@ -131,7 +131,7 @@ a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1f1f1f;
+  background-color: #000000;
   min-height: 100vh;
   padding: 100px 0;
   font-family: Jost;
@@ -165,6 +165,8 @@ a:visited {
   margin: 1rem;
   margin-bottom: 20px;
   border-radius: 6px;
+  transition: ease 0.3s box-shadow;
+  position: relative;
 }
 
 .timeline-component {
@@ -196,4 +198,28 @@ a:visited {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+}
+
+.timeline-content h3:hover::before {
+  content: "Covid-19"; /* Le texte que tu veux afficher */
+  position: absolute;
+  left: 33%; /* Position à droite de l'élément h3 */
+  top: -10%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec une légère transparence */
+  color: black; /* Couleur du texte */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  white-space: nowrap; /* Empêche le texte de se casser en ligne */
+  z-index: 10;
+  font-size: 14px; /* Taille du texte */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none; /* Empêche l'élément d'interférer avec le curseur */
+}
+
+.timeline-content h3:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
 }
